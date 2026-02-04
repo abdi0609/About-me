@@ -3,14 +3,13 @@ import { ModuleFederationPlugin } from "@module-federation/enhanced/rspack";
 import { dependencies } from "./package.json";
 import path from "path";
 
-
 export default defineConfig({
   server: {
     port: 3001,
   },
-    dev: {
+  dev: {
     // It is necessary to configure assetPrefix, and in the production environment, you need to configure output.assetPrefix
-    assetPrefix: 'http://localhost:3001',
+    assetPrefix: "http://localhost:3001",
   },
   output: {
     assetPrefix: "http://localhost:3001/",
@@ -22,7 +21,7 @@ export default defineConfig({
 
   source: {
     entry: {
-      index: "./src/index.tsx", 
+      index: "./src/index.tsx",
     },
   },
 
@@ -51,8 +50,13 @@ export default defineConfig({
               eager: true,
               requiredVersion: dependencies["react-router-dom"],
             },
+            "react-router": {
+              singleton: true,
+              eager: true,
+              requiredVersion: dependencies["react-router"],
+            },
           },
-          dts:true
+          dts: true,
         }),
       ],
     },
