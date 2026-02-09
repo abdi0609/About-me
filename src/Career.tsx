@@ -7,6 +7,7 @@ import {
   CardContent,
   CardMedia,
   createTheme,
+  Divider,
   Stack,
   ThemeProvider,
   Typography,
@@ -22,19 +23,28 @@ import CustomCard from "CustomCard";
 const cardInfo = [
   {
     logo: vgsLogo,
+    subtext: "upper secondary school\n2018-2021",
     name: "Lambertseter vgs",
   },
   {
     logo: uioLogo,
+    subtext: "bachelor`s degree\n2021-2024",
     name: "University of Oslo",
   },
   {
     logo: experisLogo,
+    subtext: "graduate program \n2025-2026",
     name: "Experis Academy",
   },
   {
     logo: technipFMCLogo,
+    subtext: "consultant \n2025-2026",
     name: "TechnipFMC",
+  },
+  {
+    logo: "test",
+    subtext: "something \nbefore-after",
+    name: "test",
   },
 ];
 const EducationEntries = cardInfo.slice(0, 2);
@@ -62,33 +72,47 @@ export default function Career(): ReactElement {
           minHeight: 400,
         }}
       >
-        <Typography variant="customTypo">Education</Typography>
+        <Divider sx={{ width: "100%", my: 3 }}>
+          <Typography variant="h4"> Education</Typography>
+        </Divider>
         <Stack
           direction="row"
+          spacing={4}
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            minHeight: 400,
+            minHeight: 300,
           }}
         >
           {EducationEntries.map((entries) => (
-            <CustomCard image={entries.logo} name={entries.name} />
+            <CustomCard
+              image={entries.logo}
+              name={entries.name}
+              subtext={entries.subtext}
+            />
           ))}
         </Stack>
-        <Typography variant="customTypo">Work Experience</Typography>
+        <Divider sx={{ width: "100%", my: 3 }}>
+          <Typography variant="h4"> Work experience</Typography>
+        </Divider>
         <Stack
           direction="row"
+          spacing={4}
           sx={{
             marginTop: 4,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            minHeight: 400,
+            minHeight: 300,
           }}
         >
           {ExperienceEntries.map((entries) => (
-            <CustomCard image={entries.logo} name={entries.name} />
+            <CustomCard
+              image={entries.logo}
+              name={entries.name}
+              subtext={entries.subtext}
+            />
           ))}
         </Stack>
       </Stack>
