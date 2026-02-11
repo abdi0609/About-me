@@ -6,27 +6,27 @@ import TechStackModal from "TechStackModal";
 const cloudDevopsTools = [
   {
     tech: "AWS",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
     tech: "Azure",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
     tech: "Docker",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
     tech: "git",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
     tech: "CI/CD",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
     tech: "Github Actions",
-    useCase: ["Product Configurator", "CXP insights", "CXP Core"],
+    useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
 ];
 
@@ -55,7 +55,3 @@ export default function CloudDevops(): ReactElement {
     </Stack>
   );
 }
-//tenker å gjøre alle chips klikkbare, og ved klikk åpnes en modal med info om hvor mye jeg har brukt det og i hvilke prosjekter, med en link til prosjekt modalen
-//i hver chip funskjon så må vi legge til en usestate for åpne modalen, som blir satt til true ved klikk. ved true rendrer vi en techmodal, hvor vi må sende inn navn på teknologien, en liten tekst om hvordan jeg har brukt den
-
-//mo

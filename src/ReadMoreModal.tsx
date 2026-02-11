@@ -28,6 +28,26 @@ const modalInfo = [
     infoText:
       "Worked as a consultant at TechnipFMC, contributing to the development and maintenance of internal applications in a professional, agile environment.",
   },
+  {
+    name: "Product Configurator",
+    infoText:
+      "A complex tool for configuring oil and gas products such as pipelines and related components, with dynamic rules and real-time updates.",
+  },
+  {
+    name: "CXP Insights",
+    infoText:
+      "An analytics dashboard for visualizing user data, statistics, and insights across applications.",
+  },
+  {
+    name: "user-tracking",
+    infoText:
+      "A service for tracking user behavior and application events to support analytics and UX improvements",
+  },
+  {
+    name: "CXP Core",
+    infoText:
+      "The host application for the microservices architecture, providing shared functionality and acting as the entry point for the other applications.",
+  },
 ];
 
 const style = {
