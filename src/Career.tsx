@@ -1,11 +1,4 @@
 import {
-  Box,
-  Button,
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
   createTheme,
   Divider,
   Stack,
@@ -18,6 +11,7 @@ import vgsLogo from "./images/lambertseter.png";
 import uioLogo from "./images/uio.png";
 import experisLogo from "./images/experis.jpg";
 import technipFMCLogo from "./images/technipFMC.webp";
+import labradorLogo from "./images/labrador-cms.webp";
 import CustomCard from "CustomCard";
 
 const cardInfo = [
@@ -42,9 +36,9 @@ const cardInfo = [
     name: "TechnipFMC",
   },
   {
-    logo: "test",
-    subtext: "something \nbefore-after",
-    name: "test",
+    logo: labradorLogo,
+    subtext: "Consultant \n2026",
+    name: "LabradorCMS",
   },
 ];
 const EducationEntries = cardInfo.slice(0, 2);

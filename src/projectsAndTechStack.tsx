@@ -1,4 +1,4 @@
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Divider, Stack, Typography } from "@mui/material";
 import { ReactElement } from "react";
 import * as React from "react";
 import ProgrammingLanguages from "TechStackChips/ProgrammingLanguages";

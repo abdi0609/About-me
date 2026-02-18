@@ -35,11 +35,18 @@ const databasesAndStorageTools = [
 ];
 
 export default function DatabasesAndStorage(): ReactElement {
-  const [selectedTool, setSelectedTool] = useState<{tech:string, useCase: string[]} | null>(null);
+  const [selectedTool, setSelectedTool] = useState<{
+    tech: string;
+    useCase: string[];
+  } | null>(null);
   return (
     <Stack direction="row" maxWidth={200} flexWrap="wrap">
       {databasesAndStorageTools.map((entry) => (
-        <Chip key={entry.tech} label={entry.tech} onClick= {() => setSelectedTool(entry)} />
+        <Chip
+          key={entry.tech}
+          label={entry.tech}
+          onClick={() => setSelectedTool(entry)}
+        />
       ))}
       {selectedTool && (
         <TechStackModal

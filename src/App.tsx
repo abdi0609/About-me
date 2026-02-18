@@ -1,8 +1,8 @@
-import { ReactElement, useState, useEffect } from "react";
+import { ReactElement } from "react";
 import * as React from "react";
-import { Avatar, Box, Card, Fab, Stack, Typography } from "@mui/material";
+import { Avatar, Card, Stack, Typography } from "@mui/material";
 import profileImage from "./images/Mahamoud_Abdi.jpg";
-import { Outlet, Route, Routes, useNavigate } from "react-router";
+import { Route, Routes, useNavigate } from "react-router";
 import Career from "Career";
 import ProjectsAndTechStack from "ProjectsAndTechStack";
 import Hobbies from "Hobbies";

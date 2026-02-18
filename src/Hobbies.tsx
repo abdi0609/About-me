@@ -14,7 +14,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
   };
 }
 
-export default function Hobbies() {
+export default function Hobbies(): ReactElement {
   return (
     <Stack>
       <Divider textAlign="left" sx={{ width: "100%", my: 3 }}>

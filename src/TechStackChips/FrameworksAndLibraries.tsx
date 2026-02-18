@@ -3,9 +3,7 @@ import { ReactElement, useState } from "react";
 import * as React from "react";
 import TechStackModal from "TechStackModal";
 
-
-
- const frameworksAndLibraries = [
+const frameworksAndLibraries = [
   {
     tech: "React",
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
@@ -15,7 +13,7 @@ import TechStackModal from "TechStackModal";
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
-    tech: "MUI" ,
+    tech: "MUI",
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
   {
@@ -29,20 +27,27 @@ import TechStackModal from "TechStackModal";
 ];
 
 export default function FrameworksAndLibraries(): ReactElement {
-  const [selectedTool, setSelectedTool] = useState<{tech:string, useCase: string[]} | null>(null);
+  const [selectedTool, setSelectedTool] = useState<{
+    tech: string;
+    useCase: string[];
+  } | null>(null);
   return (
     <Stack direction="row" maxWidth={200} flexWrap="wrap">
       {frameworksAndLibraries.map((entry) => (
-        <Chip key={entry.tech} label={entry.tech} onClick = {()=> setSelectedTool(entry)} />
+        <Chip
+          key={entry.tech}
+          label={entry.tech}
+          onClick={() => setSelectedTool(entry)}
+        />
       ))}
-       {selectedTool && (
-              <TechStackModal
-                open={true}
-                name={selectedTool.tech}
-                usecases={selectedTool.useCase}
-                handleClose={() => setSelectedTool(null)}
-              />
-            )}
+      {selectedTool && (
+        <TechStackModal
+          open={true}
+          name={selectedTool.tech}
+          usecases={selectedTool.useCase}
+          handleClose={() => setSelectedTool(null)}
+        />
+      )}
     </Stack>
   );
 }

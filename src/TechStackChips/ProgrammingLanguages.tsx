@@ -1,9 +1,10 @@
 import { Chip, Stack } from "@mui/material";
-import { ReactElement,useState } from "react";
+import { ReactElement, useState } from "react";
 import * as React from "react";
 import TechStackModal from "TechStackModal";
 
-  const programmingLanguages = [{
+const programmingLanguages = [
+  {
     tech: "java",
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
@@ -27,7 +28,7 @@ import TechStackModal from "TechStackModal";
     tech: "typescript",
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
-    {
+  {
     tech: "scheme",
     useCase: ["Product Configurator", "CXP Insights", "CXP Core"],
   },
@@ -39,22 +40,26 @@ import TechStackModal from "TechStackModal";
 
 export default function ProgrammingLanguages(): ReactElement {
   const [selectedTool, setSelectedTool] = useState<{
-      tech: string;
-      useCase: string[];
-    } | null>(null);
+    tech: string;
+    useCase: string[];
+  } | null>(null);
   return (
     <Stack direction="row" maxWidth={200} flexWrap="wrap">
       {programmingLanguages.map((entry) => (
-        <Chip key={entry.tech} label={entry.tech} onClick ={()=> setSelectedTool(entry)} />
+        <Chip
+          key={entry.tech}
+          label={entry.tech}
+          onClick={() => setSelectedTool(entry)}
+        />
       ))}
-       {selectedTool && (
-              <TechStackModal
-                open={true}
-                name={selectedTool.tech}
-                usecases={selectedTool.useCase}
-                handleClose={() => setSelectedTool(null)}
-              />
-            )}
+      {selectedTool && (
+        <TechStackModal
+          open={true}
+          name={selectedTool.tech}
+          usecases={selectedTool.useCase}
+          handleClose={() => setSelectedTool(null)}
+        />
+      )}
     </Stack>
   );
 }
