@@ -1,0 +1,145 @@
+{
+  "id": "aboutMe",
+  "name": "aboutMe",
+  "metaData": {
+    "name": "aboutMe",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "about-me"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "aboutMe",
+    "pluginVersion": "0.21.6",
+    "prefetchInterface": false,
+    "publicPath": "http://localhost:3001/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^19.2.0",
+      "shareScope": "default",
+      "eager": true,
+      "name": "react-dom",
+      "version": "19.2.3",
+      "id": "aboutMe:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^7.10.1",
+      "shareScope": "default",
+      "eager": true,
+      "name": "react-router-dom",
+      "version": "7.12.0",
+      "id": "aboutMe:react-router-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^7.13.0",
+      "shareScope": "default",
+      "eager": true,
+      "name": "react-router",
+      "version": "7.12.0",
+      "id": "aboutMe:react-router",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^19.2.0",
+      "shareScope": "default",
+      "eager": true,
+      "name": "react",
+      "version": "19.2.3",
+      "id": "aboutMe:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./App",
+      "id": "aboutMe:App",
+      "name": "App",
+      "requires": [],
+      "file": "src\\bootstrap.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/566.deb2af45.js",
+            "static/js/674.3fd4d891.js",
+            "static/js/async/__federation_expose_App.fb633a4f.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    }
+  ]
+}

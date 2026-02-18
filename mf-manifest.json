@@ -1,0 +1,131 @@
+{
+  "id": "aboutMe",
+  "name": "aboutMe",
+  "metaData": {
+    "name": "aboutMe",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "about-me"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "aboutMe",
+    "pluginVersion": "0.21.6",
+    "prefetchInterface": false,
+    "publicPath": "http://localhost:3001/"
+  },
+  "shared": [
+    {
+      "id": "aboutMe:react-dom",
+      "name": "react-dom",
+      "version": "19.2.3",
+      "singleton": true,
+      "requiredVersion": "^19.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "aboutMe:react-router-dom",
+      "name": "react-router-dom",
+      "version": "7.12.0",
+      "singleton": true,
+      "requiredVersion": "^7.10.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "aboutMe:react-router",
+      "name": "react-router",
+      "version": "7.12.0",
+      "singleton": true,
+      "requiredVersion": "^7.13.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "aboutMe:react",
+      "name": "react",
+      "version": "19.2.3",
+      "singleton": true,
+      "requiredVersion": "^19.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "remoteEntry.js",
+            "static/js/500.749a182f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "aboutMe:App",
+      "name": "App",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/566.deb2af45.js",
+            "static/js/674.3fd4d891.js",
+            "static/js/async/__federation_expose_App.fb633a4f.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./App"
+    }
+  ]
+}
