@@ -7,7 +7,8 @@
   "scripts": {
     "prettier": "prettier --write .",
     "dev": "rsbuild dev",
-    "build": "rsbuild build"
+    "build": "rsbuild build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -35,6 +36,7 @@
     "@typescript-eslint/parser": "^8.49.0",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.7.4"
   },
   "repository": {
@@ -47,5 +49,5 @@
   "bugs": {
     "url": "https://github.com/abdi0609/About-me/issues"
   },
-  "homepage": "https://github.com/abdi0609/About-me#readme"
+  "homepage": "https://abdi0609.github.io/About-me"
 }
