@@ -12,7 +12,7 @@ export default defineConfig({
     assetPrefix: "http://localhost:3001",
   },
   output: {
-    assetPrefix: "http://localhost:3001/",
+    assetPrefix: "/About-me/",
   },
 
   html: {
