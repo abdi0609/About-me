@@ -22,7 +22,7 @@
     "globalName": "aboutMe",
     "pluginVersion": "0.21.6",
     "prefetchInterface": false,
-    "publicPath": "http://localhost:3001/"
+    "publicPath": "/About-me/"
   },
   "shared": [
     {
